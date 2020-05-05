@@ -18,9 +18,12 @@ function addToCounter() {
   counterDisplay.innerText = parseInt(counterDisplay.innerText) + 1;
 }
 
+<<<<<<< HEAD
 let setTimer = setInterval(addToCounter, 1000);
 
 
+=======
+>>>>>>> 63d55eb7b1428bb36992b4b9ccd15888605b6d61
 const addComment = comment => {
    document.getElementById("list").appendChild(comment);
 };
@@ -60,14 +63,22 @@ function stopOrResumeCount() {
   }
   
   else {
+<<<<<<< HEAD
     setTimer = setInterval(addToCounter, 1000);
+=======
+    setInterval(addToCounter, 1000);
+>>>>>>> 63d55eb7b1428bb36992b4b9ccd15888605b6d61
     disableOrEnableButtons();
   }
 }
 
 
 // Counter Functionality
+<<<<<<< HEAD
 setTimer;
+=======
+setInterval(addToCounter, 1000);
+>>>>>>> 63d55eb7b1428bb36992b4b9ccd15888605b6d61
 
 // Comment Functionality
 commentForm.addEventListener("submit", createComment);
@@ -75,6 +86,7 @@ commentForm.addEventListener("submit", createComment);
 // Pause Button Functionality
 pauseBtn.addEventListener("click", stopOrResumeCount);
 
+<<<<<<< HEAD
 // Like Button Function
 heartBtn.addEventListener("click", () => {
     numHearts.innerText = `<p>${counterDisplay.innerText}<p>`;
@@ -95,5 +107,8 @@ decrementBtn.addEventListener("click", () => {
   amt--;
   counterDisplay.innerText = amt;
 });
+=======
+
+>>>>>>> 63d55eb7b1428bb36992b4b9ccd15888605b6d61
 
 
